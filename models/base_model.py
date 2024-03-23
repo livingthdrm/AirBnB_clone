@@ -12,13 +12,13 @@ class BaseModel:
     id = str(uuid.uuid4())
     created_at = datetime.datetime.now()
     updated_at = datetime.datetime.now()
-    
+
     def __str__(self):
         """ A module that prints
         [<class name>] (<self.id>) <self.__dict__> """
         class_name = type(self).__name__
         return f"[{class_name}] ({self.id}) <{self.__dict__}>"
-    
+
     def save(self):
         """ A method to update public instance attribute
         updated_at with the current datetime """
@@ -29,10 +29,10 @@ class BaseModel:
     def to_dict(self):
         """ returns a dictionary containing all
         keys/values of __dict__ of the instance """
-        
-        #self.__dict__ = {'self.__class__' = 'self.name')
+
         for key, value in self.__dict__:
             print(key, value)
+
 
 print("Does my code work?")
 print()
