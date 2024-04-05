@@ -6,6 +6,7 @@
 	width: 100%;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
+	position: relative;
 }
 
 .filters div {
@@ -22,11 +23,16 @@
 	border-right: 1px solid #DDDDDD;
 }
 
+.filters div h2 {
+	font-size: 16px;
+	padding-left: 30px;
+}
 
 .filters div h3{
 	font-weight: 600;
 	margin: 0;
 	padding-left: 40px;
+	cursor: pointer;
 }
 
 .filters div h4 {
@@ -34,18 +40,42 @@
 	font-size: 14px;
 	margin: 0;
 	padding-left: 40px;
+	cursor: pointer;
 }
 
-.filters div .popover {
+.filters .popover {
 	display: none;
-	position: absolute;
-	color: #FAFAFA;
 	border: 1px solid #DDDDDD;
+	align-items: center;
+	position: absolute;
+	top: 100%;
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	background-color: #FAFAFA;
 	list-style: none;
+	border-radius: 4px;
 }
 
-.filters div .popover:hover {
-	background-color: grey;
+.amenities li {
+	padding-top: 5px;
+}
+
+.filters .amenities li:first-child {
+	padding-top: 20px;
+}
+
+.filters .amenities li:last-child {
+	padding-bottom: 20px;
+}
+
+.filters .popover li {
+	list-style-type: none;
+}
+
+.filters .locations:hover .popover,
+.filters .amenities:hover .popover {
+    display: inline-block;
 }
 
 .filters button {
