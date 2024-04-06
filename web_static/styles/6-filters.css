@@ -23,19 +23,21 @@
 	border-right: 1px solid #DDDDDD;
 }
 
-.filters div h2 {
+.filters h2 {
+	margin: 0;
 	font-size: 16px;
-	padding-left: 30px;
+	padding-left: 20px;
+	padding-top: 20px;
 }
 
-.filters div h3{
+.filters h3{
 	font-weight: 600;
 	margin: 0;
 	padding-left: 40px;
 	cursor: pointer;
 }
 
-.filters div h4 {
+.filters h4 {
 	font-weight: 400;
 	font-size: 14px;
 	margin: 0;
@@ -76,6 +78,7 @@
 .filters .locations:hover .popover,
 .filters .amenities:hover .popover {
     display: inline-block;
+    z-index: 1;
 }
 
 .filters button {
