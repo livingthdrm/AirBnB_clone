@@ -71,7 +71,8 @@
 
 .filters .locations:hover .popover,
 .filters .amenities:hover .popover {
-    display: inline-block;
+	display: flex;
+	flex-flow: column wrap;
     z-index: 1;
 }
 
