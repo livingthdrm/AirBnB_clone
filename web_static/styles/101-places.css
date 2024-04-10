@@ -1,5 +1,5 @@
 .places {
-	overflow: hidden;
+	display: flex;
 	position: relative;
 }
 
@@ -16,7 +16,6 @@
 	margin: 10px 20px;
 	border: 1px solid #FF5A5F;
 	border-radius: 4px;
-	position: relative;
 }
 
 .places h1 {
@@ -100,7 +99,7 @@
 article .amenities {
 	margin-top: 20px;
 	margin-left: 20px;
-	justify-content: left;
+	justify-content: flex-start;
 }
 
 article .amenities h2 {
@@ -128,7 +127,7 @@ article .amenities ul li {
 div .reviews {
 	margin-top: 20px;
 	margin-left: 20px;
-	justify-content: left;
+	justify-content: flex-start;
 }
 
 div .reviews h2 {
