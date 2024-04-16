@@ -1,5 +1,5 @@
 .places {
-	display: flex;
+	overflow: hidden;
 	position: relative;
 }
 
@@ -11,11 +11,12 @@
 }
 
 .places article {
-	width: 390px;
+	width: 40%;
 	padding: 10px;
 	margin: 10px 20px;
 	border: 1px solid #FF5A5F;
 	border-radius: 4px;
+	position: relative;
 }
 
 .places h1 {
@@ -23,7 +24,7 @@
 	padding: 0;
 	width: 100%;
 	text-align: left;
-	font-size: 30px;
+	font-size: 2rem;
 	position: relative;
 }
 
@@ -38,7 +39,7 @@
 	border-radius: 50%;
 	min-width: 60px;
 	height: 60px;
-	font-size: 30px;
+	font-size: 2rem;
 	position: absolute;
 	top: 20px;
 	right: 20px;
@@ -97,9 +98,8 @@
 }
 
 article .amenities {
-	margin-top: 20px;
 	margin-left: 20px;
-	justify-content: flex-start;
+	justify-content: left;
 }
 
 article .amenities h2 {
@@ -115,19 +115,18 @@ article .amenities ul {
 }
 
 article .amenities ul li {
-	padding-top: 5px;
+	margin-top: 10px;
 	padding-left: 40px;
 	align-items: center;
 	background-repeat: no-repeat;
 	background-color: transparent;
-	background-size: 20px;
+	background-size: 25px;
 	background-position: left;
 }
 
 div .reviews {
-	margin-top: 20px;
 	margin-left: 20px;
-	justify-content: flex-start;
+	justify-content: left;
 }
 
 div .reviews h2 {
@@ -167,4 +166,35 @@ div .reviews ul{
 
 .wifi {
 	background-image: url(../images/icon_wifi.png);
+}
+
+
+@media screen and (max-width: 768px) {
+    .places article {
+        width: calc(100% - 10vw);
+        margin: 2vw 5vw;
+    }
+    
+    .places h1 {
+        margin: 2vw auto;
+    }
+    
+    .price_by_night {
+        min-width: 10vw;
+        height: 10vw;
+        top: 2vw;
+        right: 5vw;
+    }
+    
+    .user h4 {
+        margin-top: 2vw;
+        margin-left: 2vw;
+    }
+    
+    .amenities li,
+    .reviews li {
+        margin-top: 2vw;
+        padding-left: 5vw;
+        background-size: 5vw;
+    }
 }
