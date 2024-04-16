@@ -6,6 +6,20 @@ body {
 	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.high-contrast {
+    background-color: black;
+    color: white;
+}
+
+.color-contrast {
+    background-color: #F5F5F5;
+    color: #484848;
+}
+
+.large-font {
+    font-size: 16px;
+}
+
 .container {
 	max-width: 1000px;
 	margin: 30px auto;
