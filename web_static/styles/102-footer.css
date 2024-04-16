@@ -1,11 +1,19 @@
 footer {
 	margin-top: auto;
 	background-color: white;
-	height: 60px;
+	height: 6vh;
 	width: 100%;
 	border-top: 1px solid #CCCCCC;
 	text-align: center;
 	position: relative;
 	bottom: 0;
-	line-height: 60px;
+	line-height: 6vh;
+}
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 50px;
+        line-height: 50px;
+    }
 }
