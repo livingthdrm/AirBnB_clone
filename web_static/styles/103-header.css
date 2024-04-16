@@ -1,0 +1,17 @@
+header {
+	background-color: transparent;
+	height: 7vh;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	background-image: url("../images/logo.png");
+	background-repeat: no-repeat;
+	background-position: 5vw center;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 60px;
+        background-position: 10px center;
+    }
+}
